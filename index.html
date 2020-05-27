@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>Watch and listen to your favorite bands!
+        <form onsubmit="writeOutput('<p>hello</p>')">
+            <label for="choose band">choose a band!</label>
+            <input type="text" id="bandChoice" value="Search Here"/>
+            <input type="submit" id="button" value="Search">
+        </form>
+    </section>
+    <section id="showBandChoice"></section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
+
+<!-- https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=I8PyHDOwCGKXot8NEFNzlL2zagthWIXD -->
+<!-- https://www.googleapis.com/youtube/v3//search?part=snippet&q=YouTube+Data+API&type=video&videoCaption=closedCaption&key=AIzaSyAV-iYlcoNVSMiws_hA_guBlxdTtLJd8p4 -->
+<!-- https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Craig%20Noone&format=json -->
