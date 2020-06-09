@@ -74,6 +74,7 @@ function getBandInfo(bandName,apiName){
 
     fetch(apiUrl)
     .then(response => {
+        console.log(response);
         return response.json();
         // if (response.ok) {
         //     //return JSON.parse(response);
