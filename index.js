@@ -106,8 +106,9 @@ function regesterButtonClick(){
     $(`#button`).click(function (event) {
         event.preventDefault();
         let bandName = $('#bandChoice').val();
+        console.log(bandName)
         //getBandInfo(bandName,'youtube');
-        getBandInfo(bandName,'ticketMaster');
+        //getBandInfo(bandName,'ticketMaster');
         getBandInfo(bandName,'wiki');
     });
 }
