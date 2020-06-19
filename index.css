@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    /*reset Firefox user agent styles*/
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-before: 0px;
+    -moz-padding-after: 0px;
+    -moz-padding-start: 0px;
+    -moz-padding-end: 0px;
+    /*reset Internet Explorer user agent styles*/
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-before: 0px;
+    -ms-padding-after: 0px;
+    -ms-padding-start: 0px;
+    -ms-padding-end: 0px;
+    /*reset Opera user agent styles*/
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-before: 0px;
+    -o-padding-after: 0px;
+    -o-padding-start: 0px;
+    -o-padding-end: 0px;
+}
+
+input,button{
+    padding: 15px;
+    margin: 10px;
+
+}
+
+.results{
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.results img{
+    display: block;
+    width: 100%;
+}
+
+#resultsContainer {
+    margin-left: 33px;
+    margin-right: 33px;
+}
+
+#showBandTM {
+    overflow-y: auto;
+    height: 250px;
+    width: 100%;
+}
+
+#heroContainer {
+    color: #fff;
+    background: #2C97DE;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 15000;
+    border-bottom: 2px solid #3880BF;
+    text-align: center;
+}
+
+#heroText {
+    display: block;
+    margin: 20px;
+}
+
+#heroSearch {
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 830px) {
+    [class=col-50] {
+        width=50%
+}
+
+/*iPhone portrait*/
+@media only screen and (min-width: 320px) {
+    body {
+        color: purple;
+    }
+}
+
+/*iPhone landscape*/
+@media only screen and (min-width: 480px) {
+    body {
+        color: green;
+    }
+}
+
+/*Android landscape*/
+@media only screen and (min-width: 640px) {
+    body {
+        color: brown;
+    }
+}
+
+/*iPad potrait*/
+@media only screen and (min-width: 768px) {
+    body {
+        color: red;
+    }
+}
+
+/*#heroContainer {
+    color: #fff;
+    background: #2C97DE;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 15000;
+    border-bottom: 2px solid #3880BF;
+}
+
+#heroText {
+    display: flex;
+    justify-content:space-around; 
+}
+
+
+body{
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-family: roboto;
+}
+
+#heroContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    font-family: domine;
+    background-color:white;
+}
+
+#heroText {
+    display: flex;
+    justify-content:space-around; 
+}
+
+.results {
+    margin-top:150px;
+}

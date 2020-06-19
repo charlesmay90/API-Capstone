@@ -1,5 +1,20 @@
-//step 3 with api call results display them (in deifferent specific functions)
+//returns / if the url is NOT valid
+function checkURL(inputURL) {
+    let outputURL = inputURL;
+    if (inputURL === undefined) {
+        outputURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png";
+    }
+    else if (inputURL == null) {
+        outputURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png";
+    }
 
+    else{
+        outputURL=inputURL.source
+    }
+    return outputURL;
+}
+
+//step 3 with api call results display them (in deifferent specific functions)
 function  showYoutubeBandInfo(responseJson){ 
     console.log(responseJson)
     let dataString = "";
@@ -51,7 +66,7 @@ function showWikiBandInfo(data){
         html=
         `<li class="item">
             <h3>
-                <img src="${pages[pagesArr[i]].thumbnail.source}" class="wikiImage" alt="${pages[pagesArr[i]].title}" >
+                <img src="${checkURL(pages[pagesArr[i]].thumbnail)}" class="wikiImage" alt="${pages[pagesArr[i]].title}" >
                 <a target="_blank"> 
                     ${pages[pagesArr[i]].title}
                 </a>
@@ -163,8 +178,8 @@ function regesterButtonClick(){
         let bandName = $('#bandChoice').val();
         console.log(bandName)
         //getBandInfo(bandName,'youtube');
-        //getBandInfo(bandName,'ticketMaster');
-        //getBandInfo(bandName,'wiki');
+        getBandInfo(bandName,'ticketMaster');
+        getBandInfo(bandName,'wiki');
         getWikiResults(bandName, showWikiBandInfo)
     });
 }
