@@ -44,9 +44,9 @@
 }
 
 input,button{
-    padding: 15px;
+    padding: 9px;
     margin: 10px;
-
+    border-radius: 30px;
 }
 
 .results{
@@ -64,8 +64,10 @@ input,button{
 }
 
 #resultsContainer {
+    background-image: url("website-images/band-logos.jpg");
     margin-left: 33px;
     margin-right: 33px;
+    border-bottom: 10px;
 }
 
 #showBandTM {
@@ -74,9 +76,24 @@ input,button{
     width: 100%;
 }
 
+.eventInfoName {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 8px;
+    background-color: #c00;
+    color: white;
+    box-shadow: 0px 4px 0px #000000;
+    transform: translate(0, 4px);
+    transition: all .2s ease-in-out;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
 #heroContainer {
     color: #fff;
-    background: #2C97DE;
+    background: #c00;
     display: block;
     position: -webkit-sticky;
     position: sticky;
