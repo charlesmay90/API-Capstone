@@ -41,16 +41,17 @@ function  showTicketMasterBandInfo(responseJson){
         dataString +=  `<a href = '${event.url}' class = 'eventInfoUrl' target = '_blank'>`
         dataString +=  `<h1 class = 'eventInfoName'>${event.name}</h1>`
         dataString +=  `</a>`
+        dataString +=  `<p class = 'eventInfoData'>${event.dates.start.localDate} ${event.dates.start.localTime}</p>`
         dataString +=  `<img src = '${event.images[0].url}' class = 'eventInfoImg' alt = '${event.name}' />`
 
         // dataString +=  `<h1>${event.url}</h1>`
-        dataString +=  `<p class = 'eventInfoData'>${event.dates.start.localDate} ${event.dates.start.localTime}</p>`
         //dataString +=  `<h1>${event.images[0].url}</h1>`
         dataString +=  `</div>`
     })
 
     $("#showBandTM").html(dataString);
 }
+
 
 function showWikiBandInfo(data){
     let pages=data['query']['pages'];
@@ -67,11 +68,11 @@ function showWikiBandInfo(data){
         `<li class="item">
             <h3>
                 <img src="${checkURL(pages[pagesArr[i]].thumbnail)}" class="wikiImage" alt="${pages[pagesArr[i]].title}" >
-                <a target="_blank"> 
+                <a class="wikiPageInfo" target="_blank"> 
                     ${pages[pagesArr[i]].title}
                 </a>
             </h3>
-            <p>${pages[pagesArr[i]].extract}</p> 
+            <p class="wikiPageInfo">${pages[pagesArr[i]].extract} Click the link to learn more!</p> 
         </li>`;
         $(html).appendTo($('#showBandWiki')).find('a').attr('href',curid+pagesArr[i]);
     }
@@ -100,7 +101,7 @@ function getWikiResults(bandName, callback) {
 }
 
 function getBandInfo(bandName,apiName){
-    const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${bandName}&type=video&maxResults=5&key=AIzaSyCBJc8FQPhP30cJCkEabNb5qdC1qDn022c`
+    const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${bandName}&type=video&maxResults=5&key=AIzaSyBt3RWFXOB4SeV-PFWnVwdbM34LUIp7J0c`
     const ticketMasterUrl = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${bandName}&countryCode=US&apikey=I8PyHDOwCGKXot8NEFNzlL2zagthWIXD`
     
     //previously tried url where cors didn't work
@@ -179,7 +180,7 @@ function regesterButtonClick(){
         console.log(bandName)
         //getBandInfo(bandName,'youtube');
         getBandInfo(bandName,'ticketMaster');
-        getBandInfo(bandName,'wiki');
+        //getBandInfo(bandName,'wiki');
         getWikiResults(bandName, showWikiBandInfo)
     });
 }
