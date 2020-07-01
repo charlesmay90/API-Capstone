@@ -115,12 +115,16 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 .results{
+    overflow-y: auto;
+    height: 400px;
     margin: 20px;
-    padding: 20px;
-    width: 80%;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+    width: 80%;
     max-width: 1200px;
+    border-bottom: 1px solid white;
 }
 
 .results img{
@@ -133,18 +137,6 @@ Content styles (Main Module)
     margin-left: 33px;
     margin-right: 33px;
     border-bottom: 10px;
-}
-
-#showBandYoutube {
-    overflow-y: auto;
-    height: 400px;
-    width: 100%;
-}
-
-#showBandTM {
-    overflow-y: auto;
-    height: 400px;
-    width: 100%;
 }
 
 
