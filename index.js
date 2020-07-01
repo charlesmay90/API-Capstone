@@ -178,9 +178,8 @@ function regesterButtonClick(){
         event.preventDefault();
         let bandName = $('#bandChoice').val();
         console.log(bandName)
-        //getBandInfo(bandName,'youtube');
+        getBandInfo(bandName,'youtube');
         getBandInfo(bandName,'ticketMaster');
-        //getBandInfo(bandName,'wiki');
         getWikiResults(bandName, showWikiBandInfo)
     });
 }
