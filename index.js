@@ -101,7 +101,7 @@ function getWikiResults(bandName, callback) {
 }
 
 function getBandInfo(bandName,apiName){
-    const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${bandName}&type=video&maxResults=5&key=AIzaSyBt3RWFXOB4SeV-PFWnVwdbM34LUIp7J0c`
+    const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${bandName}&type=video&maxResults=5&key=AIzaSyBINCsQ8n5u9T7WLthq9yMJJo6dT1ywsw0`
     const ticketMasterUrl = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${bandName}&countryCode=US&apikey=I8PyHDOwCGKXot8NEFNzlL2zagthWIXD`
     
     //previously tried url where cors didn't work
