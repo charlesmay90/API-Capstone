@@ -56,11 +56,11 @@ html {
 }
 
 body{
-    /* logo */
+    /* logo usually fancy*/
     /* font-family: 'Dancing Script', cursive;
-    /* titles */
+    /* titles usually san-serif*/
     /* font-family: 'Heebo', sans-serif; */
-    /* everything else */
+    /* everything else usually serif */
     font-family: 'Roboto Slab', serif;
 }
 
@@ -115,11 +115,18 @@ Header styles (Main Module)
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+/* .sectionTitle{
+    color: white;
+    text-align: center;
+    margin: 150px;
+    font-family: 'Heebo', sans-serif;
+} */
+
 .results{
     overflow-y: auto;
     height: 400px;
     margin: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -140,6 +147,14 @@ Content styles (Main Module)
     border-bottom: 10px;
 }
 
+.sectionTitle {
+    overflow-y: auto;
+    margin-bottom: 60px;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 115%;
+    text-align: center;
+}
 
 .eventInfoName {
     margin-left: 30%;
