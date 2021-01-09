@@ -24,7 +24,7 @@ Landing
 
 ## Functionality
 The app's functionality includes:
-* Every User has the ability to create an account
+Any visitor can search for specific bands
 
 
 ## Technology
@@ -35,4 +35,4 @@ App is built to be usable on mobile devices, as well as responsive across mobile
 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
-* add more functionality
+* add more styling for easier user interaction
