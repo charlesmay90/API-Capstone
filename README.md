@@ -1,16 +1,14 @@
-# Capstone Project Title
-One line description of what this app is doing and who is it for
+# Musicality
+If you are looking for one place to satisfy all your music needs. This app allows you to listen to your favorite bands, find concerts near you, and learn about their history all in one place.
 
 ## Working Prototype
-You can access a working prototype of the app here: https://charlesmay90.github.io/API-Capstone
+You can access a working prototype of the app here: https://charlesmay90.github.io/band-search-api-capstone/
 
 ## User Stories
-This app is for two types of users: a visitor and a logged-in user
+This app is for one type of users: any public visitor
 
 #### Landing Page
-* as a visitor
-* I want to understand what I can do with this app
-* so I can decide if I want to use it
+As A visitor I want to clearly see there are multiple music related things I can search for at once so I can decide if the app is useful for me
 
 ### Wireframes
 Landing
